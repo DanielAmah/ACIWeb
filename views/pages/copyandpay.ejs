@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+  <div class="container-contact100">
+    <span class="contact100-title">
+      ACI API App
+    </span>
+    <div class="wrap-contact100">
+      <div>
+        <div>
+          <span class="contact100-form-title">
+            Send Payment
+          </span>
+          <script src="https://test.oppwa.com/v1/paymentWidgets.js?checkoutId=<%= checkoutId %>"></script>
+          <form method="post" action="https://aci-sample-app.herokuapp.com/result" class="paymentWidgets" data-brands="VISA MASTER"></form>
+
+          <center>
+            <p>To make payment use the test details below:</p>
+          <br>
+          <h6>Visa</h6>
+          <p>Test Card details: 4200 0000 0000 0000</p>
+          <p>Expiry Date: 01/23, Card holder: Test Card, CVV: 123</p>
+          <br>
+          <h6>MasterCard</h6>
+          <p>Test Card details: 5454 5454 5454 5454</p>
+          <p>Expiry Date: 01/23, Card holder: Test Card, CVV: 123</p>
+        </center>
+</div>
+
+
+</div>
+
+
+
+</div>
+</div>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>

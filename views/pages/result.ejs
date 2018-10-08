@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+  <div class="container-contact100">
+    <span class="contact100-title">
+      ACI API App
+    </span>
+    <div class="wrap-contact100">
+      <div>
+        <div>
+          <span class="contact100-form-title">
+           Payment Details
+          </span>
+          <% if(amount != null) { %>
+
+            <p style="font-size: 20px">Message: <span style="font-weight: bold"><%= message %></span> </p>
+            <br />
+            <p style="font-size: 20px">Amount: <span style="font-weight: bold"><%= amount %></span> </p>
+            <br />
+            <p style="font-size: 20px">Time: <span style="font-weight: bold"><%= time %></span> </p>
+
+            <br>
+            <center><a href="https://aci-sample-app.herokuapp.com/">Click here to make another payment</a></center>
+          <% } else { %>
+            <center><a href="https://aci-sample-app.herokuapp.com/">Click here to make a payment</a></center>
+            <% }%>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+</div>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>
